@@ -155,3 +155,22 @@ footer {
     text-align: right; 
 }
 
+#right {
+    float: right;
+    padding-left: 20px;
+}
+
+#left {
+    float: left;
+    padding-right: 20px;
+}
+
+section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section {
+    margin: 10px 0;
+}
