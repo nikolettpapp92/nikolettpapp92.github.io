@@ -1,178 +1,287 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: black;
-    color: white;
     font-family: 'Roboto', sans-serif;
-    ;
+    letter-spacing: 2px;
 }
 
-ul {
-    list-style-type: none;
-}
-
-
-li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 8px;
-    font-size: 20px;
-}
-
-li a:hover {
-    color: #F7A000;
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "header header"
+        "main main"
+        "main main"
+        "main main"
+        "main main"
+        "footer footer";
 }
 
 header {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.fokep {
-    filter: brightness(45%);
-    margin-top: 20px;
-}
-
-.text {
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
+    grid-area: header;
+    height: 90px;
 }
 
 main {
-    width: 80%;
-    margin: 0 auto;
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    height: 100px;
+}
+
+.logo {
+    float: left;
+    margin-left: 30px;
+    height: 120%;
+}
+
+.navbar {
+    float: right;
+    font-size: 18px;
+    margin-right: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding: 5px;
+    float: left;
+    margin-right: 30px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+}
+
+li a:hover {
+    background-color: #434a54;
+    color: white;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.fokep {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%)
+}
+
+h1 {
+    color: white;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    border-left: 2px solid #F7A000; 
+    margin: 30px 0;
+    border-left: 2px solid #434a54;
     padding-left: 5px;
-
 }
 
-h2,
-h3 {
-    color: #F7A000;
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-h3 {
-    margin-top: 30px;
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    margin: 0 10%;
+    padding: 30px;
+}
+
+section p {
+    line-height: 20px;
 }
 
 p {
     text-align: justify;
-    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-#video {
-    display: block;
-    margin: auto;
-    border: none;
-}
-
-.ytvideo {
-    padding: 30px 0;
-}
-
-.picfloat {
+.uzletvezeto {
     float: right;
-    text-align: center;
+    padding-left: 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
 }
 
-#gitarfooldal {
-    border-radius: 15px;
-    margin-top: 25px;
+.galeria {
+    display: table;
+    clear: both;
 }
 
-label {
-    display: block;
-    padding: 20px 10px;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
 }
 
-input,
-textarea {
+.column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
-    border: none;
-    border-radius: 10px;
-}
-
-input {
-    height: 30px;
-}
-
-.form {
-    text-align: center;
-    width: 30%;
-    margin: 0 auto;
-    border: 3px dotted white;
-    padding: 20px;
-}
-
-input[type=submit] {
-    margin-top: 20px;
-    background-color: #F7A000;
-    color: white; 
-    font-size: 15px;
-    font-weight: 900;
-    font-family:'Roboto', sans-serif;
-}
-
-input[type=submit]:hover {
-    background-color: black;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-}
-
-::placeholder {
-    font-family:'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 15px;
-    padding: 10px;
-}
-
-#kapcsolat {
-    margin-bottom: 60px;
 }
 
 footer {
-    margin: 50px;
-    border-top: 1px solid #F7A000;
+    height: 250px;
 }
 
-.lablec p {
-    text-align: right; 
+.konyvek {
+    height: 500px;
+    width: 100%;
+    filter: blur(4px);
 }
 
-#right {
-    float: right;
-    padding-left: 20px;
+.konyvespolc {
+    border: none;
+    font-weight: bold;
 }
 
-#left {
-    float: left;
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.kapcsolat {
+    grid-column: 1 / 1;
+    margin-bottom: 30px;
+}
+
+.social {
+    grid-column: 2 / 2;
+    margin-bottom: 30px;
+
+}
+
+.fa-mobile {
+    font-size: 20px;
+}
+
+.fa-style {
+    margin-left: 30px;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icon {
+    text-align: end;
     padding-right: 20px;
 }
 
-section::after {
-    content: "";
-    clear: both;
-    display: table;
+.icon-text {
+    font-size: 14px;
+}
+
+.fa-facebook-square:hover {
+    color: #0084FF;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: #E43A30;
+    cursor: pointer;
+}
+
+/*
+}
+header {
+    height: 100px;
+    background: black;
+    opacity: 0.5;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+nav {
+    float: right;
+    height: 100%;
+    font-size: 18px;
+}
+
+li {
+    padding: 5px;
+    float: left;
+    margin-right: 30px;
+    height: 50%;
+    margin-top: 35px;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    height: 650px;
+    width: 100%;
+
+    background-size: cover;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    margin-bottom: 15px;
 }
 
 section {
-    margin: 10px 0;
-}
-
+    display: grid;
+    margin: 5% 10%;
+    text-align: justify;
+    font-size: 18px;
+}*/
