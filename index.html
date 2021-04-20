@@ -4,39 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kult cafe - Kávé, kultúra, közösség egy helyen.">
+    <meta name="description" content="Kultcafe - kávé, kultúra, közösség. ">
     <meta name="author" content="Papp Nikolett">
     <title>Kultcafe</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="js/js.js">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
     <div class="content">
         <header>
-            <img class="logo" src="img/kultcafe-logo-final.png" alt="logo">
+            <a href="index.html"><img class="logo" src="img/kultcafe-logo-final.png" style="height: 90px" alt="logo"></a>
+            <div class="mobilmenu">&#8801;</div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Étlap-Itallap</a></li>
-                    <li><a href="#">Kultúra</a></li>
-                    <li><a href="#">Asztalfoglalás</a></li>
-                    <li><a href="#">Kapcsolat</a></li>
+                    <li><a href="etlap-itallap.html">Étlap-Itallap</a></li>
+                    <li><a href="kultura.html">Kultúra</a></li>
+                    <li><a href="asztalfoglalas.html">Asztalfoglalás</a></li>
+                    <li><a href="kapcsolat.html">Kapcsolat</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="container">
-                <img class="fokep" src="/img/cafe.jpg" alt="">
-                <h1 class="centered">Kávé. Kultúra. Közösség.</h1>
+                <img class="fokep" src="/img/cafe.jpg" alt="Kultcafe">
+                <img class="fokep-mobil" src="/img/kultcafe-mobil.jpg" alt="Kultcafe">
+                <h1 class="centered animate__animated animate__fadeIn">Kávé. Kultúra. Közösség.</h1>
             </div>
             <section>
                 <h2>Rólunk</h2>
-                <img class="uzletvezeto" src="img/brooke-cagle-9fHMo1-5Io8-unsplash.jpg" alt="" width="40%">
+                <img class="uzletvezeto" src="img/Kiss-Anita-uzletvezeto.jpg" alt="" width="40%">
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate corporis expedita reiciendis velit debitis, sed fugiat at nihil ipsum sapiente, quibusdam rerum soluta accusantium amet mollitia quod earum ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate corporis expedita reiciendis velit debitis, sed fugiat at nihil ipsum sapiente, quibusdam rerum soluta accusantium amet mollitia quod earum ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate corporis expedita reiciendis velit debitis, sed fugiat at nihil ipsum sapiente, quibusdam rerum soluta accusantium amet mollitia quod earum ullam.</p>
 
@@ -44,39 +47,37 @@
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate corporis expedita reiciendis velit debitis, sed fugiat at nihil ipsum sapiente, quibusdam rerum soluta accusantium amet mollitia quod earum ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate corporis expedita reiciendis velit debitis, sed fugiat at nihil ipsum sapiente, quibusdam rerum soluta accusantium amet mollitia quod earum ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cupiditate corporis expedita reiciendis velit debitis, sed fugiat at nihil ipsum sapiente, quibusdam rerum soluta accusantium amet mollitia quod earum ullam.</p>
             </section>
-            <div class="container parallax">
+            <div class="container-konyv">
                 <img class="konyvek" src="img/konyvek.jpg" alt="">
-                <h2 class="centered konyvespolc">Ha nálunk jársz, nézz szét a könyvespolcon!Tetszik valamelyik könyv? Ülj be hozzánk olvasni, vagy vidd haza, és hozz helyette egy másikat!</h2>
+                <h3 class="centered konyvespolc">Ha nálunk jársz, nézz szét a könyvespolcon! Tetszik valamelyik könyv? Ülj be hozzánk olvasni, vagy vidd haza, és hozz helyette egy másikat!</h3>
             </div>
             <section>
                 <div class="galeria">
                     <h2>Galéria</h2>
                     <div class="row">
                         <div class="column">
-                            <img src="img/bogre-begin-felirattal.jpg" alt="">
-                            <img src="img/cortado.jpg" alt="">
-                            <img src="img/kave-sutemeny.jpg" alt="">
+                            <img src="img/bogre-begin-felirattal.jpg" alt="Bögre begin felirattal">
+                            <img src="img/cortado.jpg" alt="Cortado">
+                            <img src="img/kave-sutemeny.jpg" alt="Kávé, sütemény">
                         </div>
                         <div class="column">
-                            <img src="img/reggeli-1.jpg" alt="">
-                            <img src="img/reggeli-2.jpg" alt="">
-                            <img src="img/reggeli-3.jpg" alt="">
+                            <img src="img/reggeli-1.jpg" alt="Reggeli a Kultcafeban">
+                            <img src="img/reggeli-2.jpg" alt="Reggeli a Kultcafeban">
+                            <img src="img/reggeli-3.jpg" alt="Reggeli a Kultcafeban">
                         </div>
                         <div class="column">
-                            <img src="img/kave.jpg" alt="">
-                            <img src="img/reggeli-4.jpg" alt="">
-                            <img src="img/kavehaz.jpg" alt="">
+                            <img src="img/kave.jpg" alt="Kávé">
+                            <img src="img/reggeli-4.jpg" alt="Reggeli a Kultcafeban">
+                            <img src="img/kavehaz.jpg" alt="Kávéházunk">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <hr>
         <footer>
-            <hr>
             <div class="wrapper">
                 <div>
-                    <h3 class="kapcsolat">Kapcsolat</h3>
+                    <h2 class="kapcsolat"><u>Kapcsolat</u></h2>
                     <div class="nested">
                         <p class="icon"><i class="fa fa-mobile" style="font-size:24px"></i></p>
                         <p class="icon-text">+36301234567</p>
@@ -90,9 +91,10 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="social">Kövess minket!</h3>
-                    <div class="nested"><i class="fa fa-facebook-square" style="font-size: 24px; text-align: end; margin-right: 10px;"></i>
-                    <i class="fa fa-instagram" style="font-size: 24px;"></i>
+                    <h2 class="social"><u>Kövess minket!</u></h2>
+                    <div class="nested">
+                        <a href="https://facebook.com/kultcafe" class="fa fa-facebook-square" style="font-size: 24px; text-align: end; margin-right: 10px;"></a>
+                        <a href="" class="fa fa-instagram" style="font-size: 24px;"></a>
                     </div>
                 </div>
             </div>
@@ -100,4 +102,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>
