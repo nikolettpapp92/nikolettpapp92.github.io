@@ -4,23 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kultcafe - kávé, kultúra, közösség. ">
+    <meta name="description" content="Ha kérdésed merült fel, vedd fel velünk a kapcsolatot elérhetőségeink egyikén!">
     <meta name="author" content="Papp Nikolett">
-    <title>Kultcafe</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/js.js"></script>
+    <title>Kultcafe - Kapcsolat</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!--Js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
 </head>
-
 <body>
-    <div class="content">
+    <div class="content kapcsolat-oldal">
+        <!--Fejléc-->
         <header>
-            <a href="index.html"><img class="logo" src="img/kultcafe-logo-final.png" style="height: 90px" alt="logo"></a>
+            <a href="index.html"><img class="logo" src="img/kultcafe-logo-final.png" style="height: 100px" alt="logo"></a>
             <div class="mobilmenu">&#8801;</div>
             <nav class="navbar">
                 <ul>
@@ -31,6 +43,7 @@
                 </ul>
             </nav>
         </header>
+        <!--Fejléc vége, fő tartalom-->
         <main>
             <div class="container">
                 <img class="fokep" src="/img/cafe.jpg" alt="Kultcafe">
@@ -39,8 +52,12 @@
             </div>
             <div class="kapcsolat-wrap">
                 <div class="kapcsolat-adatok">
+                    <h2 style="text-align: center; border: none;">Kapcsolat</h2>
                     <h3>Cím:</h3>
                     <p>1114 Budapest, Bartók Béla út 39.</p>
+                    <div id="terkep">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.562527064679!2d19.04749961550348!3d47.47895387917641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddb2cd1b1885%3A0x2ce1a87bd3c3dbe0!2zQnVkYXBlc3QsIEJhcnTDs2sgQsOpbGEgw7p0IDM5LCAxMTE0!5e0!3m2!1shu!2shu!4v1618851355036!5m2!1shu!2shu" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                     <h3>E-mail:</h3>
                     <p>info@kultcafe.hu</p>
                     <h3>Nyitvatartás:</h3>
@@ -49,27 +66,40 @@
                     <h3>Asztalfoglalás:</h3>
                     <p>Telefonon: +3630 1234567</p>
                     <p>Online: <a id="asztalfoglalas" href="asztalfoglalas.html">https://kultcafe.hu/asztalfoglalas</a></p>
-                    <h3>Cégadatok:</h3>
-                    <p>Cégnév: Kultcafe Kft.</p>
-                    <p>Székhely: 1016 Budapest, Logodi utca 14. </p>
-                    <p>Adószám: 12345678-2-47</p>
                 </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.562527064679!2d19.04749961550348!3d47.47895387917641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddb2cd1b1885%3A0x2ce1a87bd3c3dbe0!2zQnVkYXBlc3QsIEJhcnTDs2sgQsOpbGEgw7p0IDM5LCAxMTE0!5e0!3m2!1shu!2shu!4v1618851355036!5m2!1shu!2shu" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="uzenet-form">
+                    <h2 style="text-align: center; border: none;">Kérdésed van? Írj nekünk üzenetet!</h2>
+                    <p style="text-align: center;">Amennyiben kiállítani szeretnél, kérlek jelöld ezt a tárgy megnevezésénél az alábbi módon: Tárgy: Kiállítanék!" Köszönjük.</p>
+                    <form action="">
+                        <label for="name">Név:</label>
+                        <input type="text" name="name" id="name" style="background: #CDC9BE; width: 80%;" required>
+                        <label for="subject">Tárgy:</label>
+                        <input type="text" name="subject" id="subject" style="background: #CDC9BE; width: 80%">
+                        <label for="email">E-mail cím:</label>
+                        <input type="email" name="email" id="email" style="background: #CDC9BE; width: 80%" required>
+                        <label for="tel">Telefonszám:</label>
+                        <input type="tel" name="tel" id="tel" style="background: #CDC9BE; width: 80%" required>
+                        <label for="textarea">Üzenet:</label>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10" style="height: 100%; background: #CDC9BE; width: 80%"></textarea>
+                        <div id="kapcsolat-gomb">
+                            <input type="submit" value="Elküldöm az üzenetet!">
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>
+        <!--Lábléc-->
         <footer>
             <div class="wrapper">
                 <div>
                     <h2 class="kapcsolat"><u>Kapcsolat</u></h2>
                     <div class="nested">
                         <p class="icon"><i class="fa fa-mobile" style="font-size:24px"></i></p>
-                        <p class="icon-text">+36301234567</p>
+                        <p class="icon-text"><a href="tel:+36301234567">+36301234567</a></p>
                         <p class="icon"><i class="fa fa-map-marker"></i></p>
                         <p class="icon-text">1114 Budapest Bartók Béla út 39.</p>
                         <p class="icon"><i class="fa fa-envelope-o"></i></p>
-                        <p class="icon-text">info@kultcafe.hu</p>
+                        <p class="icon-text"><a href="mailto:info@kultcafe.hu">info@kultcafe.hu</a></p>
                         <p class="icon"><i class="fa fa-globe"></i>
                         </p>
                         <p class="icon-text">https://kultcafe.hu</p>
@@ -77,12 +107,13 @@
                 </div>
                 <div>
                     <h2 class="social"><u>Kövess minket!</u></h2>
-                    <div class="nested">
+                    <div class="nested-2">
                         <a href="https://facebook.com/kultcafe" class="fa fa-facebook-square" style="font-size: 24px; text-align: end; margin-right: 10px;"></a>
-                        <a href="" class="fa fa-instagram" style="font-size: 24px;"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram" style="font-size: 24px;"></a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-</body></html>
+</body>
+</html>

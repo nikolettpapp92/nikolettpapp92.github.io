@@ -4,26 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kultcafe - kávé, kultúra, közösség. ">
+    <meta name="description" content="Változatos programok a kultúra és a művészet szerelmeseinek. Kiállítások, irodalmi-, és felolvasóestek, borkóstolás.">
     <meta name="author" content="Papp Nikolett">
-    <title>Kultcafe</title>
+    <title>Kultcafe - Kultúra</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="js/js.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!--JS-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
 </head>
 
 <body>
     <div class="content">
+        <!--Fejléc-->
         <header>
-            <a href="index.html"><img class="logo" src="img/kultcafe-logo-final.png" style="height: 90px" alt="logo"></a>
+            <a href="index.html"><img class="logo" src="img/kultcafe-logo-final.png" style="height: 100px" alt="logo"></a>
             <div class="mobilmenu">&#8801;</div>
             <nav class="navbar">
                 <ul>
@@ -34,6 +46,7 @@
                 </ul>
             </nav>
         </header>
+        <!--Fejléc vége, fő tartalom-->
         <main>
             <div class="container">
                 <img class="fokep" src="/img/cafe.jpg" alt="Kultcafe">
@@ -53,41 +66,38 @@
                 </div>
                 <div class="row-kiallitas">
                     <div class="column-kiallitas">
-                        <img id="termeszet-1" src="img/horvath-csilla-kiallitas-kep-termeszet-1.jpg" alt="Snow">
+                        <img id="termeszet-1" src="img/horvath-csilla-kiallitas-kep-termeszet-1.jpg" alt="Természet fotó - Nő a búzamezőn">
                     </div>
                     <div class="column-kiallitas">
-                        <img src="img/horvath-csilla-kiallitas-kep-termeszet-2.jpg" alt="Forest">
+                        <img src="img/horvath-csilla-kiallitas-kep-termeszet-2.jpg" alt="Természet fotó - Erdő">
                     </div>
                     <div class="column-kiallitas">
-                        <img src="img/horvath-csilla-kiallitas-kep-termeszet-3.jpg" alt="Mountains">
+                        <img src="img/horvath-csilla-kiallitas-kep-termeszet-3.jpg" alt="Természet fotó - Virág">
                     </div>
                 </div>
                 <div class="kultura">
                     <h2 style="text-align: center; border: none; padding-top: 50px;">Aktuális események</h2>
+                    <p><strong>Borkóstoló</strong></p>
                     <p><strong>Időpont: 2021. május 8.</strong></p>
                     <p>A már Magyarország egyik jelképévé vált Tokaji hegyvidék ismert boraival találkozhatunk ezen a boresten. Kellemes környezetben, családias hangulatban, profi sommelier segítségével kóstolhatjátok végig a kiváló minőségű nedűket, melyek gondos válogatást követően kerültek az est borsorába.</p>
                     <div class="esemeny">
                         <div class="borkostolo" id="fancybox">
-                            <p class="imglist" style= "text-align: center;">
+                            <p class="imglist" style="text-align: center;">
                                 <a data-fancybox-trigger="preview" href="javascript:;">
-                                    <img src="img/borkostolas-3-nagy.jpg" width="95%" />
+                                    <img src="img/borkostolas-3-nagy.jpg" alt="Sajt-, és gyümölcstál" width="95%" />
                                 </a>
-
                                 <a href="img/borkostolas-3-nagy.jpg" data-fancybox="preview" data-width="1500" data-height="900">
-                                    <img src="img/borkostolas-3-kicsi.jpg" />
+                                    <img src="img/borkostolas-3-kicsi.jpg" alt="Sajt-, és gyümölcstál" />
                                 </a>
-
                                 <a href="img/borskostolas-1-nagy.jpg" data-fancybox="preview" data-width="1500" data-height="900">
-                                    <img src="img/borskostolas-1-kicsi.jpg" />
+                                    <img src="img/borskostolas-1-kicsi.jpg" alt="Sajt borral" />
                                 </a>
-
                                 <a href="img/borkostolas-2-nagy.jpg" data-fancybox="preview" data-width="1500" data-height="900">
-                                    <img src="img/borkostolas-2-kicsi.jpg" />
+                                    <img src="img/borkostolas-2-kicsi.jpg" alt="Borkóstoló" />
                                 </a>
                                 <a href="img/borkostolas-4-nagy.jpg" data-fancybox="preview" data-width="1500" data-height="900">
-                                    <img src="img/borkostolas-4-kicsi.jpg" />
+                                    <img src="img/borkostolas-4-kicsi.jpg" alt="Borkóstoló - poharak" />
                                 </a>
-
                         </div>
                         <div class="borkostolo">
                             <p>A Tokaj-hegyaljai borvidék összesen 27 települést foglal magába. A terület a világ első zárt borvidéke volt, 1737-ben született meg az a királyi rendelet, mely felsorolta azokat a településeket, amelyek határában a tokaji bor előállításához alkalmas szőlő termelhető. Az elmúlt ezer év alatt kialakult szőlőművelési hagyományok érintetlen, eredeti formában való továbbélése és a borvidék évezredes egysége indokolta, hogy a borvidéket a világörökség részévé nyilvánítsák.</p>
@@ -102,23 +112,25 @@
                             <div id="button">
                                 <a href="https://facebook.com"><button type="button">Tovább a facebook eseményre!</button></a>
                             </div>
-                            <p>Jelentkezni az eseményre az info@kultface.hu címen tudtok.</p><p>Mindenkit várunk szerettel!</p>
+                            <p>Jelentkezni az eseményre az info@kultface.hu címen tudtok.</p>
+                            <p>Mindenkit várunk szeretettel!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <!--Lábléc-->
         <footer>
             <div class="wrapper">
                 <div>
                     <h2 class="kapcsolat"><u>Kapcsolat</u></h2>
                     <div class="nested">
                         <p class="icon"><i class="fa fa-mobile" style="font-size:24px"></i></p>
-                        <p class="icon-text">+36301234567</p>
+                        <p class="icon-text"><a href="tel:+36301234567">+36301234567</a></p>
                         <p class="icon"><i class="fa fa-map-marker"></i></p>
                         <p class="icon-text">1114 Budapest Bartók Béla út 39.</p>
                         <p class="icon"><i class="fa fa-envelope-o"></i></p>
-                        <p class="icon-text">info@kultcafe.hu</p>
+                        <p class="icon-text"><a href="mailto:info@kultcafe.hu">info@kultcafe.hu</a></p>
                         <p class="icon"><i class="fa fa-globe"></i>
                         </p>
                         <p class="icon-text">https://kultcafe.hu</p>
@@ -126,9 +138,9 @@
                 </div>
                 <div>
                     <h2 class="social"><u>Kövess minket!</u></h2>
-                    <div class="nested">
+                    <div class="nested-2">
                         <a href="https://facebook.com/kultcafe" class="fa fa-facebook-square" style="font-size: 24px; text-align: end; margin-right: 10px;"></a>
-                        <a href="" class="fa fa-instagram" style="font-size: 24px;"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram" style="font-size: 24px;"></a>
                     </div>
                 </div>
             </div>

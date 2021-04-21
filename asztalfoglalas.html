@@ -4,32 +4,54 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kultcafe - kávé, kultúra, közösség. ">
+    <meta name="description" content="Foglalj asztalt hozzánk egyszerűen és gyorsan online, vagy hívj minket a +36301234567-es telefonszámon!">
     <meta name="author" content="Papp Nikolett">
-    <title>Kultcafe</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/js.js"></script>
+    <title>Kultcafe - Asztalfoglalás</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!--JS-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $(function() {
-            $("#datepicker").datepicker();
+        $(document).ready(function() {
+            $(function() {
+                $("#datepicker").datepicker({
+                    dateFormat: "yy-mm-dd",
+                    firstDay: 1,
+                    dayNamesMin: ["Va", "Hé", "Ke", "Sze", "Cs", "Pé", "Szo"],
+                    monthNames: ["Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"],
+                    minDate: 0,
+                });
+            });
         });
     </script>
 </head>
-
 <body>
     <div class="content">
+       <!--Fejléc-->
         <header>
             <div class="logo-wrap">
-                <a href=index.html><img class="logo" src="img/kultcafe-logo-final.png" style="height: 90px" alt="logo"></a>
+                <a href=index.html><img class="logo" src="img/kultcafe-logo-final.png" style="height: 100px" alt="logo"></a>
             </div>
             <div class="mobilmenu">&#8801;</div>
             <nav class="navbar">
@@ -41,6 +63,7 @@
                 </ul>
             </nav>
         </header>
+        <!--Fejléc vége, fő tartalom-->
         <main>
             <div class="container">
                 <img class="fokep" src="/img/cafe.jpg" alt="Kultcafe">
@@ -52,7 +75,6 @@
                     <div class="form">
                         <h2>Online foglalás </h2>
                         <p>Konyhánk kapacitása miatt foglalást sajnos csak 12 fős létszámig tudunk felvenni.</p>
-
                         <p>Az űrlap elküldéséről automatikus visszaigazolást fogsz kapni, azonban a foglalás csak akkor válik véglegessé, ha kollégáink megerősítik azt.</p>
                         <form action="">
                             <label for="name">Név:</label>
@@ -97,17 +119,18 @@
                 </div>
             </section>
         </main>
+        <!--Lábléc-->
         <footer>
             <div class="wrapper">
                 <div>
                     <h2 class="kapcsolat"><u>Kapcsolat</u></h2>
                     <div class="nested">
                         <p class="icon"><i class="fa fa-mobile" style="font-size:24px"></i></p>
-                        <p class="icon-text">+36301234567</p>
+                        <p class="icon-text"><a href="tel:+36301234567">+36301234567</a></p>
                         <p class="icon"><i class="fa fa-map-marker"></i></p>
                         <p class="icon-text">1114 Budapest Bartók Béla út 39.</p>
                         <p class="icon"><i class="fa fa-envelope-o"></i></p>
-                        <p class="icon-text">info@kultcafe.hu</p>
+                        <p class="icon-text"><a href="mailto:info@kultcafe.hu">info@kultcafe.hu</a></p>
                         <p class="icon"><i class="fa fa-globe"></i>
                         </p>
                         <p class="icon-text">https://kultcafe.hu</p>
@@ -115,13 +138,13 @@
                 </div>
                 <div>
                     <h2 class="social"><u>Kövess minket!</u></h2>
-                    <div class="nested">
+                    <div class="nested-2">
                         <a href="https://facebook.com/kultcafe" class="fa fa-facebook-square" style="font-size: 24px; text-align: end; margin-right: 10px;"></a>
-                        <a href="" class="fa fa-instagram" style="font-size: 24px;"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram" style="font-size: 24px;"></a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-
-</body></html>
+</body>
+</html>
